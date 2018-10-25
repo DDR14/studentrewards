@@ -5,7 +5,7 @@
 </head>
 <?php include_once("assets.php"); ?>
 <body>
-	<?php include_once("header.php"); ?>
+	<?php include_once("header.php"); ?><br>
 	<?php include_once("navbar.php"); ?>
 	<br>
 	<div class="container">
@@ -22,56 +22,66 @@
     <br>
     <div class="container">
     	<div class="row">
-    		<div class="col-sm-6">
+    		<div class="col-sm-1">
+    			
+    		</div>
+    		<div class="col-sm-5">
     			<h2 class="h2" style="border-bottom: 2px solid orange">Address Details</h2><br>
-    			<div class="input-field">
-				    <input class="inputss" type="text" id="company" style="width: 540px" required />
-				    <label class="label" for="company">&nbsp;Company Name</label>
-				</div>
+	    		  <label style="font-family: 'Cooper Hewitt Light'">Company Name</label>
+	              <div class="envelope">
+	                <span class="fa fa-building"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div>
 			    <br>
 			      <input id="male" type="radio" name="gender" checked>
 			      <label for="male">Male&nbsp;</label>
 			      <input id="female" type="radio" name="gender">
 			      <label for="female">Female</label>
 			    <br><br>
-			    <div class="input-field" style="float:left;">
-				    <input class="inputss" type="text" id="first_name" style="width: 250px" required />
-				    <label class="label" for="first_name">&nbsp;First Name</label>
-				</div>
-				<div class="input-field" style="float:right;">
-				    <input class="inputss" type="text" id="last_name" style="width: 250px" required />
-				    <label class="label" for="last_name">&nbsp;Last Name</label>
-				</div><br><br><br>
-				<div class="input-field">
-				    <input class="inputss" type="text" id="address" style="width: 540px" required />
-				    <label class="label" for="address">&nbsp;Street Address</label>
-				</div><br>
-				<div class="input-field">
-				    <input class="inputss" type="text" id="address2" style="width: 540px" required />
-				    <label class="label" for="address2">&nbsp;Address Line 2</label>
-				</div><br>
-				<div class="input-field" style="float:left;">
-				    <input class="inputss" type="text" id="city" style="width: 250px" required />
-				    <label class="label" for="city">&nbsp;City</label>
-				</div>
-				<div class="input-field" style="float:right;">
-				    <input class="inputss" type="text" id="states" style="width: 250px" required />
-				    <label class="label" for="states">&nbsp;States</label>
-				</div><br><br><br>
+			    <label style="font-family: 'Cooper Hewitt Light'">First Name</label>
+	              <div class="envelope">
+	                <span class="fa fa-user-circle"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light';">
+	              </div><br>
+				<label style="font-family: 'Cooper Hewitt Light'">Last Name</label>
+	              <div class="envelope">
+	                <span class="fa fa-user-circle"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light';">
+	              </div><br>
+				<label style="font-family: 'Cooper Hewitt Light'">Street Address</label>
+	              <div class="envelope">
+	                <span class="fas fa-map-marked-alt"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div><br>
+				<label style="font-family: 'Cooper Hewitt Light'">Address Line</label>
+	              <div class="envelope">
+	                <span class="fas fa-map-marked-alt"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div><br>
+				<label style="font-family: 'Cooper Hewitt Light'">City</label>
+	              <div class="envelope">
+	                <span class="fas fa-city"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div><br>
+				<label style="font-family: 'Cooper Hewitt Light'">States</label>
+	              <div class="envelope">
+	                <span class="fas fa-city"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div><br>
 				<div class="input-field" style="float: left;">
 					<input class="inputed" id="country_selector" type="text" style="width: 250px;height: 35px">
 					<label for="country_selector" style="display:none;">Select a country here...</label>
-				</div>
-				<div class="input-field" style="float:right;">
-				    <input class="inputss" type="text" id="zipcode" style="width: 250px" required />
-				    <label class="label" for="zipcode">&nbsp;Post/Zipcode</label>
 				</div><br><br><br>
-
+				<label style="font-family: 'Cooper Hewitt Light'">Post/Zipcode</label>
+	              <div class="envelope">
+	                <span class="fas fa-city"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div><br>
     		</div>
-    		<div class="col-sm-6">
-    			<h2 class="h2">How did you hear us?</h2>
+    		<div class="col-sm-5">
+    			<h2 class="h2">How did you hear us?</h2><br>
 				<div>
-				    <select>
+				    <select class="selects">
 				      	<option value="0" disabled selected>Please Choose</option>
 				      	<option value="1">Search Engine</option>
 					    <option value="2">Social Media</option>
@@ -84,33 +94,36 @@
 					    <option value="9">USBC</option>
 				    </select>
 				  </div>
-				  <br>
+				  <br><br>
 				  <h3 style="border-bottom: 1px solid orange">Additional Contact Details</h3>
 				  <br>
-				  <div class="input-field">
-				    <input class="inputss" type="text" id="telephone" style="width: 540px" required />
-				    <label class="label" for="telephone">&nbsp;Telephone</label>
-				  </div><br><br>
+				  <label style="font-family: 'Cooper Hewitt Light'">Telephone</label>
+	              <div class="envelope">
+	                <span class="fa fa-phone-square"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div><br><br>
 				  <h3 style="border-bottom: 1px solid orange">Login Details</h3>
 				  <br>
-				  <div class="input-field">
-				    <input class="inputss" type="text" id="email" style="width: 540px" required />
-				    <label class="label" for="email">&nbsp;Email Address</label>
-				  </div>
+				  <label style="font-family: 'Cooper Hewitt Light'">Email Address</label>
+	              <div class="envelope">
+	                <span class="fa fa-envelope"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div>
 				  <br>
-				  <div class="input-field">
-				    <input class="inputss" type="text" id="password" style="width: 540px" required />
-				    <label class="label" for="password">&nbsp;Password</label>
-				  </div>
-				  <br>
-				  <div class="input-field">
-				    <input class="inputss" type="text" id="confirm" style="width: 540px" required />
-				    <label class="label" for="confirm">&nbsp;Confirm Password</label>
-				  </div>
-				  <br>
+				  <label style="font-family: 'Cooper Hewitt Light'">Password</label>
+	              <div class="envelope">
+	                <span class="fa fa-key"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div><br>
+				  <label style="font-family: 'Cooper Hewitt Light'">Confirm Password</label>
+	              <div class="envelope">
+	                <span class="fa fa-key"></span>
+	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
+	              </div>
+				  <br><br>
     				<a href="#" class="btn btn-sm animated-button thar-three" style="float:right;width: 150px">SUBMIT</a>
     		</div>
-    		
+    		<div class="col-sm-1"></div>
     	</div>
     </div>
     <br><br>
@@ -246,6 +259,35 @@ a.animated-button.thar-three:before {
 	background: #fc0c64;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 0s;
+}
+.envelope {
+  position: inherit;
+  color: skyblue;
+  font-size: 16px;
+}
+
+.envelope input {
+  width: 90%;
+  height: 35px;
+  color: black;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-family: 'Cooper Hewitt Light';
+
+}
+
+.envelope input { text-indent: 32px;}
+.envelope .fa-building, .fa-user-circle, .fa-key, .fa-map-marked-alt, .fa-city, .fa-phone-square, .fa-envelope, .fa-key{ 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-sizing: border-box;
+}
+
+.selects{
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
 }
 </style>
 
