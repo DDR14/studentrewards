@@ -1,55 +1,52 @@
 <!-- Header Top -->
 <div class="container" style="height: 60px;padding-top: 10px">
 	  <div style="line-height: 1.1"><p class="alignleft" >
-	  	<a href="index.php"><b style="color:#41e5f4;font-weight: 800; font-size: 26px; ">
+	  	<a href="index.php" class="sr">
 	  		STUDENT <br>
-	    	REWARDS
-		</b></a>
+	    	REWARDS</a>
 	</p></div>
-	<div class="container">
-		<div class="alignright" >
-		  	<h6 class="h3">&nbsp;801-987-4351</h6>
-		</div><div style="line-height: 1.0">
-		<div class="alignright">
-			<img src="icons/telephone.png" style="float: right; height: 20px">
-		</div><br><br>
-		<div class="alignright">
-		  	<a href="register.php"><h6 class="as">&nbsp;Register</h6></a>
-		</div>
-		<div class="alignright">
-		  	<img src="icons/login.png" style="float: right; height: 18px">
-		</div>
-		<div class="alignright">
-		  	<a href="login.php"><h6 class="as">&nbsp;Login&nbsp;&nbsp;</h6></a>
-		</div>
-		<div class="alignright">
-		  	<img src="icons/login.png" style="float: right; height: 18px">
-		</div>
-		</div>
+	<div class="alignright" style="line-height: 1.1">
+		<span class="tp"><img src="icons/telephone.png" style="height: 26px;padding-bottom: 5px;padding-top: 3px">&nbsp;801-987-4351</span><br>
+		<span class="tp"><img src="icons/login.png" style="height: 26px;padding-bottom: 5px;padding-top: 3px">&nbsp;<a href="login.php" class="link">Login</a></span>
+		<span class="tp"><img src="icons/login.png" style="height: 26px;padding-bottom: 5px;padding-top: 3px">&nbsp;<a href="register.php" class="link">Register</a></span>	
 	</div>
 </div>
-
 <style>
 .alignleft {
 	float: left;
 }	
 .alignright {
 	float: right;
+	position: inherit;
 }
-a {
+.link{
 	text-decoration: none;
 	color: black;
 }
 
-a:hover{
+.link:hover{
 	text-decoration: none;
 	color: gray;
+}
+.tp{
+	font-size: 20px;
+	font-family: 'Cooper Hewitt Light';
+}
+.sr{
+	color: #41e5f4;
+	font-weight: bold;
+	font-family: 'Cooper Hewitt Bold';
+	font-size: 26px;
+}
+.sr:hover{
+	color: #41e5f4;
+	text-decoration: none;
 }
 @font-face {
   font-family: "Cooper Hewitt Bold";
   src: url("fonts/CooperHewitt-Bold.otf");
   font-family: "Cooper Hewitt Light";
-  src: url("fonts/CooperHewitt-Bold.otf");
+  src: url("fonts/CooperHewitt-Light.otf");
 }
 
 b{
@@ -59,7 +56,5 @@ b{
 	font-family: "Cooper Hewitt Light";
 	font-size: 20px;
 }
-.as{
-	font-family: initial;
-}
+
 </style>

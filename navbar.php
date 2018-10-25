@@ -1,119 +1,119 @@
-<br>
-<div class="container-fluids">
-  <div class="topnav" id="myTopnav">
-      <a href="#products">PRODUCTS</a>
-      <a href="design_library.php">DESIGN LIBRARY</a>
-      <a href="#how_to_order">HOW TO ORDER</a>
-      <a href="#promo">PROMO</a>
-        <div class="search-container">
-          <form>
-            <input class="input" type="text" placeholder="Search.." name="search">
-            <button class="buttons" type="submit"><i class="fa fa-search"></i></.buttons>
-          </form>
+<nav class="navbar navbar-inverse" role="navigation" style="background: #fc0c64;border:none;font-family: 'Cooper Hewitt Bold';">
+
+    <div class="container-fluid" style="background: #fc0c64;">
+        <!-- add header -->
+        <div class="navbar-header" style="background: #fc0c64">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- add search form -->
+            <form class="navbar-form navbar-right" role="search" style="height: 40px">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search . . .">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
         </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
+
+        <!-- add menu -->
+        <div class="collapse navbar-collapse" id="navbar1" style="background: #fc0c64;">
+            <ul class="nav navbar-nav" style="width:100%" style="background: #fc0c64;">
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="design_library.php">DESIGN LIBRARY</a></li>
+                <li><a href="#">HOW TO ORDER</a></li>  
+                <li><a href="#">PROMO</a></li>    
+            </ul>    
+        </div>
+    </div>
+</nav>
+
 <style>
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+/* CSS used here will be applied after bootstrap.css */
+
 @font-face {
   font-family: "Cooper Hewitt Bold";
   src: url("fonts/CooperHewitt-Bold.otf");
-}
-.topnav {
-  overflow: hidden;
-  background-color: #fc0c64;
-  font-family: "Cooper Hewitt Bold";
+  font-family: "Cooper Hewitt Light";
+  src: url("fonts/Cooper Hewitt Light.otf");
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #fc0c64;
-  color: black;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-.search-container {
-  float: right;
-}
-
-.input {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-.buttons{
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-.search-container .buttons:hover {
-  background: #f28f04;
-}
-
-.search-container .buttons {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  background: #f28f04;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: left;
-    display: block;
-    position: fixed;
-    right: 1;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+.navbar-header .navbar-form {
     position: absolute;
-    right: 1;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    right: 20px;
+    max-width: 250px;
+    background: #fc0c64;
 }
-</style>
+.btn.navbar-toggle.pull-left {
+    margin-left: 15px;
+    background: #fc0c64;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #fc0c64;
+}
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+     background-color: #fc0c64; 
+}
+@media only screen and (max-width:768px){
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #fc0c64;
+        margin-top: 0;
+        padding-top: 8px;
+        background: #fc0c64;
+
+    }
+    .navbar-form {
+        padding: 10px 15px;
+        margin-top: 8px;
+        margin-right: -15px;
+        margin-bottom: 8px;
+        margin-left: -15px;
+        border-top: 0px solid transparent;
+        border-bottom: 0px solid transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 0px 0 rgba(255,255,255,.1);
+        background: #fc0c64;
     }
 }
-</script>
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f28f04;
+    border-color: #f28f04;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.input-group-btn:last-child>.btn:hover, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f27135;
+    border-color: #f27135;
+}
+</style>

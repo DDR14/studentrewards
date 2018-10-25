@@ -6,11 +6,10 @@
 </head>
 <?php include_once("assets.php"); ?>
 <body>
-	<?php include_once("header.php"); ?>
-	<?php include_once("navbar.php"); ?><br>
-
+    <?php include_once("header.php"); ?><br>
+    <?php include_once("navbar.php"); ?><br>
 	<div class="container">
-		<img src="https://placeholdit.co//i/1090x250?bg=000000" class="img-fluid">
+		<center><img src="https://placeholdit.co//i/1090x250?bg=000000" class="img-thumbnail"></center>
 	</div>
 	<br>
 
@@ -25,31 +24,31 @@
 
 	<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
         <div style="max-width: 20%; max-height: 20%;">
-            <a href=""><img src ="https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href=""><img src ="https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">ATTENDANCE</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 100%;">
-            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">SPORTS</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 20%;">
-            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">AWARDS</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 20%;">
-            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">BEHAVIOR</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 20%;">
-            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">ACADEMICS</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
@@ -78,3 +77,4 @@ h6{
 	font-family: "Cooper Hewitt Bold";
 }
 </style>
+

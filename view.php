@@ -7,7 +7,7 @@
 <?php include_once("assets.php"); ?>
 <body>
 
-	<?php include_once("header.php"); ?>
+	<?php include_once("header.php"); ?><br>
 	
 	<?php include_once("navbar.php"); ?>
 	<br>
@@ -39,7 +39,7 @@
 		  	<div class="container">
 		  		<h2>PERFECT ATTENDANCE JANUARY</h2>
 		  		<h6>AT-119-01</h6><br>
-		  		<table border="1px">
+		  		<table border="1px" style="width: 450px">
 		  			<tr>
 				    <th scope="row" style="border-top: 1px solid white;border-bottom: 1px solid gray;">Quality : &nbsp;&nbsp;</th>
 				    <td>25+</td>
@@ -118,9 +118,7 @@ th{
 	border-right: 1px solid black;
 	font-family: "Cooper Hewitt Light";
 }
-a{
-	font-family: "Cooper Hewitt Bold";
-}
+	
 
 a.animated-button.thar-three {
 	color: black;
@@ -129,6 +127,7 @@ a.animated-button.thar-three {
 	position: relative;
 	border: 2px solid #fc0c64;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	width: 150px;
 0s;
 }
 a.animated-button.thar-three:hover {

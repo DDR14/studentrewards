@@ -7,7 +7,7 @@
 <?php include_once("assets.php"); ?>
 <body>
 
-	<?php include_once("header.php"); ?>
+	<?php include_once("header.php"); ?><br>
 	
 	<?php include_once("navbar.php"); ?>
     <br>
@@ -27,37 +27,37 @@
 
 	<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
         <div style="max-width: 20%; max-height: 20%;">
-            <a href="view.php"><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 100%;">
-            <a href="view.php"><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 20%;">
-            <a href="view.php"><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 20%;">
-            <a href="view.php"><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 20%;">
-            <a href="view.php"><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
         <div style="max-width: 20%; max-height: 20%;">
-            <a href="view.php"><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-fluid"></a>
+            <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
