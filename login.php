@@ -34,14 +34,16 @@
                 <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
               </div><br>
               <button class="btns">SUBMIT</button><br><br>
-              <a href="#" style="font-family: 'Cooper Hewitt Light'">Forgot your password? Get help to sign in.</a><br><br><br><br><br>
-              <h6><a href="#" style="font-family: 'Cooper Hewitt Light';padding-left: 75px;">Terms of use | Privacy Policy</a></h6>
+              <div class="t">
+                <a href="#" class="forgot">Forgot your password? Get help to sign in.</a>
+                <h6><a href="#" class="terms">Terms of use | Privacy Policy</a></h6>
+              </div>
       		</div>
         </div>
     	</div>
     	<br>
 	    <br>
-    </div><br>
+    </div><br><br><br>
 	<?php include_once("footer.php"); ?>
 </body>
 </html>
@@ -223,5 +225,23 @@ div[name=column] {
   position: absolute;
   top: 10px;
   left: 10px;
+
 }
+
+.terms{
+  font-family: 'Cooper Hewitt Light';
+  padding-left: 70px;
+  width: 100%;
+}
+
+.forgot{
+  font-family: 'Cooper Hewitt Light';
+  padding-left: 15px;
+  width: 100%;
+}
+
+.terms:hover, .forgot:hover{
+  text-decoration: none;
+}
+
 </style>

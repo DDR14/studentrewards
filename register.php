@@ -17,7 +17,7 @@
     <br>
     <div class="container">
     	<h1>ACCOUNT INFORMATION</h1>
-    	<h3>NOTE: If you already have an account with us, please login at the <a class="login" href="login.php"><b>login page</b></a>.</h3>
+    	<h3>NOTE: If you already have an account with us, please login on our <a class="login" href="login.php"><b>login page</b></a>.</h3>
     </div>
     <br>
     <div class="container">
