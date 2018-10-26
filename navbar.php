@@ -23,8 +23,8 @@
         </div>
 
         <!-- add menu -->
-        <div class="collapse navbar-collapse" id="navbar1" style="background: #fc0c64;">
-            <ul class="nav navbar-nav" style="width:100%" style="background: #fc0c64;">
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="nav navbar-nav" id="navb">
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="design_library.php">DESIGN LIBRARY</a></li>
                 <li><a href="#">HOW TO ORDER</a></li>  
@@ -58,6 +58,13 @@
 }
 .navbar-inverse .navbar-toggle {
     border-color: #fc0c64;
+}
+.navbar1{
+    background: #fc0c64;
+}
+.navb{
+    width:100%; 
+    background: #fc0c64;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {

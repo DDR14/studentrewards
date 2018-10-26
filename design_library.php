@@ -25,45 +25,45 @@
 		<h2 align="center">ATTENDANCE</h2>
 	</div>
 
-	<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
-        <div style="max-width: 20%; max-height: 20%;">
+	<div id="banner">
+        <div class="img">
             <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 100%;">
+        <div class="img">
             <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 20%;">
+        <div class="img">
             <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 20%;">
+        <div class="img">
             <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 20%;">
+        <div class="img">
             <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 20%;">
+        <div class="img">
             <a href="view.php"><img src = "https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">Perfect Attendance</h6>
             <h6>January</h6>
         </div>
 
     </div>
-    <br>
+    <br><br>
 	<?php include_once("footer.php"); ?>
 </body>
 </html>
@@ -135,4 +135,15 @@ h6{
 .arrows li:nth-of-type(2) a { color: hsl(0, 0%, 65%); } 
 .arrows li:nth-of-type(3) a { color: hsl(0, 0%, 50%); } 
 .arrows li:nth-of-type(4) a { color: hsl(0, 0%, 45%); } 
+
+.img{
+    max-width: 20%; 
+    max-height: 20%;
+}
+
+#banner{
+    overflow: hidden; 
+    display: flex; 
+    justify-content:space-around;
+}
 </style>

@@ -4,8 +4,8 @@
 <div class="row">
   <div class=" col-sm-4 col-md col-sm-4  col-12 col">
   <h5 class="headin5_amrc col_white_amrc pt2">STUDENT <br>REWARDS</h5>
-  <p style="font-size: 15px"><i class="fa fa-phone"></i>  801-987-4351  </p>
-  <p style="font-size: 15px"><i class="fa fa-phone"></i>  CONTACT US  </p>
+  <p class="contacts"><i class="fa fa-phone"></i>  801-987-4351  </p>
+  <p class="contacts"><i class="fa fa-phone"></i>  CONTACT US  </p>
   </div>
 
 <div class=" col-sm-4 col-md  col-6 col">
@@ -87,4 +87,8 @@ font-family: "Cooper Hewitt Light";}
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:#353535; border:1px solid #CCC; padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+.contacts{
+  font-size: 15px;
+}
 </style>

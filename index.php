@@ -22,32 +22,32 @@
 		<h1 align="center">Products</h1><br>
 	</div>
 
-	<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
-        <div style="max-width: 20%; max-height: 20%;">
+	<div id="banner">
+        <div class="products">
             <a href=""><img src ="https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">ATTENDANCE</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 100%;">
+        <div class="products">
             <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">SPORTS</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 20%;">
+        <div class="products">
             <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">AWARDS</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 20%;">
+        <div class="products">
             <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">BEHAVIOR</h6>
             <h6 style="color:red">30 Items</h6>
         </div>
 
-        <div style="max-width: 20%; max-height: 20%;">
+        <div class="products">
             <a href=""><img src =https://placeholdit.co//i/150x225?bg=000000" class="img-thumbnail"></a>
             <h6 class="h6">ACADEMICS</h6>
             <h6 style="color:red">30 Items</h6>
@@ -66,7 +66,11 @@
   font-family: "Cooper Hewitt Light";
   src: url("fonts/CooperHewitt-Light.otf");
 }
-
+#banner{
+    overflow: hidden; 
+    display: flex; 
+    justify-content:space-around;
+}
 h1{
 	font-family: "Cooper Hewitt Bold";
 }
@@ -75,6 +79,10 @@ h6{
 }
 .h6{
 	font-family: "Cooper Hewitt Bold";
+}
+.products{
+    max-width: 20%; 
+    max-height: 20%;
 }
 </style>
 

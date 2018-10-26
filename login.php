@@ -6,7 +6,7 @@
 <?php include_once("assets.php"); ?>
 
 <body>
-	<?php include_once("header.php"); ?>
+	<?php include_once("header.php"); ?><br>
 	<?php include_once("navbar.php"); ?>
 	<br>
 	<div class="container-fluids">
@@ -17,12 +17,12 @@
     </div>
     <div class="container">
     	<div class="row">
-    		<div class="col-sm-6" style="border-right: 1px solid #41e5f4">
-    			<img src="assets/img/user.png" style="width: 100%">
+    		<div class="col-sm-6" name="column">
+    			<img class="user" src="assets/img/user.png">
     		</div>
     		<div class="col-sm-6"><br>
           <h4><u>Sign in here</u></h4><br>
-          <div style="padding-left: 150px">
+          <div class="signin">
           <label style="font-family: 'Cooper Hewitt Light'">Email Address</label>
               <div class="envelope">
                 <span class="fa fa-envelope"></span>
@@ -33,15 +33,15 @@
                 <span class="fa fa-key"></span>
                 <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
               </div><br>
-              <button class="btn">SUBMIT</button><br><br>
+              <button class="btns">SUBMIT</button><br><br>
               <a href="#" style="font-family: 'Cooper Hewitt Light'">Forgot your password? Get help to sign in.</a><br><br><br><br><br>
-              <h6><a href="#" style="font-family: 'Cooper Hewitt Light';padding-left: 35px;">Terms of use | Privacy Policy</a></h6>
+              <h6><a href="#" style="font-family: 'Cooper Hewitt Light';padding-left: 75px;">Terms of use | Privacy Policy</a></h6>
       		</div>
         </div>
     	</div>
     	<br>
 	    <br>
-    </div>
+    </div><br>
 	<?php include_once("footer.php"); ?>
 </body>
 </html>
@@ -68,6 +68,17 @@ h1,h2{
 h3,h4{
 	font-family: "Cooper Hewitt Light"
 }
+div[name=column] { 
+  border-right: 1px solid #41e5f4;
+}
+.user{
+  width: 100%
+}
+
+.signin{
+  padding-left: 150px;
+}
+
 .arrows { white-space: nowrap; }
 .arrows li {
     display: inline-block;
@@ -168,7 +179,7 @@ h3,h4{
     border: 2px solid dodgerblue;
 }
 
-.btn {
+.btns {
     background-color: dodgerblue;
     color: white;
     border: none;
@@ -179,13 +190,13 @@ h3,h4{
     font-family: "Cooper Hewitt Light";
 }
 
-.btn:hover {
+.btns:hover {
     opacity: 1;
 }
 
 .envelope {
   position: relative;
-  color: skyblue;
+  color: black;
   font-size: 16px;
 }
 

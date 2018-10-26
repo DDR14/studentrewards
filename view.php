@@ -25,13 +25,13 @@
 			<br>
 			<div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
 			  	<a target="_blank" href="https://placeholdit.co//i/250?bg=111111">
-				  <img src="https://placeholdit.co//i/250x250?bg=111111" alt="Image" style="width:150px" class="img">
+				  <img src="https://placeholdit.co//i/250x250?bg=111111" alt="Image" id="img-view" class="img">
 				</a>
 				<a target="_blank" href="https://placeholdit.co//i/250x300?bg=111111">
-				  <img src="https://placeholdit.co//i/250x250?bg=111111" alt="Image" style="width:150px" class="img">
+				  <img src="https://placeholdit.co//i/250x250?bg=111111" alt="Image" id="img-view" class="img">
 				</a>
 				<a target="_blank" href="https://placeholdit.co//i/250x300?bg=111111">
-				  <img src="https://placeholdit.co//i/250x250?bg=111111" alt="Image" style="width:150px" class="img">
+				  <img src="https://placeholdit.co//i/250x250?bg=111111" alt="Image" id="img-view" class="img">
 				</a>
 			</div><br>
 		  </div>
@@ -39,9 +39,9 @@
 		  	<div class="container">
 		  		<h2>PERFECT ATTENDANCE JANUARY</h2>
 		  		<h6>AT-119-01</h6><br>
-		  		<table border="1px" style="width: 450px">
+		  		<table class="tables" border="1px">
 		  			<tr>
-				    <th scope="row" style="border-top: 1px solid white;border-bottom: 1px solid gray;">Quality : &nbsp;&nbsp;</th>
+				    <th scope="row" class="quality">Quality : &nbsp;&nbsp;</th>
 				    <td>25+</td>
 				    <td>100+</td>
 				    <td>250+</td>
@@ -50,7 +50,7 @@
 				    <td>1000+</td>
 				  </tr>
 				  <tr>
-				    <th scope="row" style="border-bottom: 1px solid white">Price : &nbsp;&nbsp;</th>
+				    <th scope="row" class="price">Price : &nbsp;&nbsp;</th>
 				    <td>$ 0.28</td>
 				    <td>$ 0.21</td>
 				    <td>$ 0.18</td>
@@ -79,7 +79,16 @@
   font-family: "Cooper Hewitt Semi Bold";
   src: url("fonts/CooperHewitt-Semibold.otf");
 }
-
+.quality{
+	border-top: 1px solid white;
+	border-bottom: 1px solid gray;
+}
+.tables{
+	max-width: 30%;
+}
+.price{
+	border-bottom: 1px solid white;
+}
 h1{
 	font-family: "Cooper Hewitt Bold";
 }
@@ -93,14 +102,12 @@ h2{
 h6{
 	font-family: "Cooper Hewitt Light";
 }
-
 .img {
     border: 1px solid #ddd; /* Gray border */
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
     width: 150px; /* Set a small width */
 }
-
 /* Add a hover effect (blue shadow) */
 .img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
@@ -119,7 +126,6 @@ th{
 	font-family: "Cooper Hewitt Light";
 }
 	
-
 a.animated-button.thar-three {
 	color: black;
 	cursor: pointer;
@@ -154,7 +160,6 @@ a.animated-button.thar-three:before {
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 0s;
 }
-
 .arrows { white-space: nowrap; }
 .arrows li {
     display: inline-block;
@@ -181,20 +186,21 @@ a.animated-button.thar-three:before {
     top: auto;
     transform: skewX(-45deg);
 }
-
 .arrows li:last-of-type::before, 
 .arrows li:last-of-type::after { 
     display: none; 
 }
-
 .arrows li a {   
    font-family: "Cooper Hewitt Light";
    letter-spacing: -1px; 
    text-decoration: none;
 }
-
 .arrows li:nth-of-type(1) a { color: hsl(0, 0%, 70%); } 
 .arrows li:nth-of-type(2) a { color: hsl(0, 0%, 65%); } 
 .arrows li:nth-of-type(3) a { color: hsl(0, 0%, 50%); } 
 .arrows li:nth-of-type(4) a { color: hsl(0, 0%, 45%); } 
+
+.img-view{
+	width: 150px;
+}
 </style>

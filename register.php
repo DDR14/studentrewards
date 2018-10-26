@@ -17,71 +17,61 @@
     <br>
     <div class="container">
     	<h1>ACCOUNT INFORMATION</h1>
-    	<h3>NOTE: If you already have an account with us, please login at the <a href="login.php"><b>login page</b></a>.</h3>
+    	<h3>NOTE: If you already have an account with us, please login at the <a class="login" href="login.php"><b>login page</b></a>.</h3>
     </div>
     <br>
     <div class="container">
     	<div class="row">
-    		<div class="col-sm-1">
-    			
-    		</div>
-    		<div class="col-sm-5">
-    			<h2 class="h2" style="border-bottom: 2px solid orange">Address Details</h2><br>
-	    		  <label style="font-family: 'Cooper Hewitt Light'">Company Name</label>
-	              <div class="envelope">
-	                <span class="fa fa-building"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div>
+    		<div class="col-sm-6">
+    			<h2 class="h2">Address Details</h2><br>
+    			<div class="inner-addon left-addon">
+			      <i class="glyphicon glyphicon-home"></i>      
+			      <input type="text" class="form-control" placeholder="Company Name"/>
+			    </div>
 			    <br>
 			      <input id="male" type="radio" name="gender" checked>
 			      <label for="male">Male&nbsp;</label>
 			      <input id="female" type="radio" name="gender">
 			      <label for="female">Female</label>
 			    <br><br>
-			    <label style="font-family: 'Cooper Hewitt Light'">First Name</label>
-	              <div class="envelope">
-	                <span class="fa fa-user-circle"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light';">
-	              </div><br>
-				<label style="font-family: 'Cooper Hewitt Light'">Last Name</label>
-	              <div class="envelope">
-	                <span class="fa fa-user-circle"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light';">
-	              </div><br>
-				<label style="font-family: 'Cooper Hewitt Light'">Street Address</label>
-	              <div class="envelope">
-	                <span class="fas fa-map-marked-alt"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div><br>
-				<label style="font-family: 'Cooper Hewitt Light'">Address Line</label>
-	              <div class="envelope">
-	                <span class="fas fa-map-marked-alt"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div><br>
-				<label style="font-family: 'Cooper Hewitt Light'">City</label>
-	              <div class="envelope">
-	                <span class="fas fa-city"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div><br>
-				<label style="font-family: 'Cooper Hewitt Light'">States</label>
-	              <div class="envelope">
-	                <span class="fas fa-city"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div><br>
-				<div class="input-field" style="float: left;">
-					<input class="inputed" id="country_selector" type="text" style="width: 250px;height: 35px">
-					<label for="country_selector" style="display:none;">Select a country here...</label>
-				</div><br><br><br>
-				<label style="font-family: 'Cooper Hewitt Light'">Post/Zipcode</label>
-	              <div class="envelope">
-	                <span class="fas fa-city"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div><br>
+			    <div class="inner-addon left-addon" id="right">
+			      <i class="glyphicon glyphicon-user"></i>      
+			      <input type="text" class="form-control" placeholder="Last Name"/>
+			    </div>
+				<div class="inner-addon left-addon" id="top">
+			      <i class="glyphicon glyphicon-user"></i>      
+			      <input type="text" class="form-control" placeholder="First Name"/>
+			    </div><br>
+				<div class="inner-addon left-addon">
+			      <i class="glyphicon glyphicon-map-marker"></i> 
+			      <input type="text" class="form-control" placeholder="Street Address"/>
+			    </div><br>
+				<div class="inner-addon left-addon">
+			      <i class="glyphicon glyphicon-map-marker"></i> 
+			      <input type="text" class="form-control" placeholder="Street Address Line 2"/>
+			    </div><br>
+				<div class="inner-addon left-addon" id="right">
+			      <i class="glyphicon glyphicon-map-marker"></i>     
+			      <input type="text" class="form-control" placeholder="State"/>
+			    </div>
+			    <div class="inner-addon left-addon" id="top">
+			      <i class="glyphicon glyphicon-globe"></i>     
+			      <input type="text" class="form-control" placeholder="Country"/>
+			    </div><br>
+				<div class="inner-addon left-addon" id="right">
+			      <i class="glyphicon glyphicon-barcode"></i>     
+			      <input type="text" class="form-control" placeholder="Post/Zipcode"/>
+			    </div>
+				<div class="inner-addon left-addon" id="top">
+			      <i class="glyphicon glyphicon-map-marker"></i>     
+			      <input type="text" class="form-control" placeholder="City"/>
+			    </div>
+				<br>
     		</div>
-    		<div class="col-sm-5">
-    			<h2 class="h2">How did you hear us?</h2><br>
+    		<div class="col-sm-6">
+    			<h2 class="h2">How did you hear us?</h2>
 				<div>
-				    <select class="selects">
+				    <select>
 				      	<option value="0" disabled selected>Please Choose</option>
 				      	<option value="1">Search Engine</option>
 					    <option value="2">Social Media</option>
@@ -94,36 +84,32 @@
 					    <option value="9">USBC</option>
 				    </select>
 				  </div>
-				  <br><br>
-				  <h3 style="border-bottom: 1px solid orange">Additional Contact Details</h3>
 				  <br>
-				  <label style="font-family: 'Cooper Hewitt Light'">Telephone</label>
-	              <div class="envelope">
-	                <span class="fa fa-phone-square"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div><br><br>
-				  <h3 style="border-bottom: 1px solid orange">Login Details</h3>
+				  <h3 class="detail">Additional Contact Details</h3>
 				  <br>
-				  <label style="font-family: 'Cooper Hewitt Light'">Email Address</label>
-	              <div class="envelope">
-	                <span class="fa fa-envelope"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div>
+				  <div class="inner-addon left-addon">
+			      <i class="glyphicon glyphicon-phone-alt"></i>     
+			      <input type="text" class="form-control" placeholder="Telephone"/>
+			      </div>
+				  <h3 class="detail">Login Details</h3>
 				  <br>
-				  <label style="font-family: 'Cooper Hewitt Light'">Password</label>
-	              <div class="envelope">
-	                <span class="fa fa-key"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div><br>
-				  <label style="font-family: 'Cooper Hewitt Light'">Confirm Password</label>
-	              <div class="envelope">
-	                <span class="fa fa-key"></span>
-	                <input type="email" name="email" style="font-family: 'Cooper Hewitt Light'">
-	              </div>
-				  <br><br>
-    				<a href="#" class="btn btn-sm animated-button thar-three" style="float:right;width: 150px">SUBMIT</a>
+				  <div class="inner-addon left-addon">
+			      <i class="glyphicon glyphicon-envelope"></i>    
+			      <input type="text" class="form-control" placeholder="Email Address"/>
+			      </div>
+				  <br>
+				  <div class="inner-addon left-addon" id="right">
+			      <i class="glyphicon glyphicon-lock"></i>     
+			      <input type="text" class="form-control" placeholder="Confirm Password"/>
+			    </div>
+				<div class="inner-addon left-addon" id="top">
+			      <i class="glyphicon glyphicon-lock"></i>     
+			      <input type="text" class="form-control" placeholder="Password"/>
+			    </div>
+				  <br>
+    				<a href="#" class="btn btn-sm animated-button thar-three">SUBMIT</a>
     		</div>
-    		<div class="col-sm-1"></div>
+    		
     	</div>
     </div>
     <br><br>
@@ -144,7 +130,8 @@ h1,h2{
 	font-family: "Cooper Hewitt Bold";
 }
 .h2{
-	font-family: "Cooper Hewitt Light"
+	font-family: "Cooper Hewitt Light";
+	border-bottom: 2px solid orange;
 }
 h3{
 	font-family: "Cooper Hewitt Light"
@@ -206,35 +193,15 @@ h3{
   transition: 0.2s all;
   font-family: "Cooper Hewitt Light"
 }
-.inputss {
-  width: 100%;
-  border: 1;
-  outline: 0;
-  padding: 0;
-  /*border-bottom: 2px solid black;*/
-  height: 35px;
-}
-.inputss:focus,
-.inputss:valid {
-  border-color: gray;
-}
-.inputss:focus~.label,
-.inputss:valid~.label {
-  top: -24px;
-  color: gray;
-}
-a{
-	font-family: "Cooper Hewitt Bold";
-}
-
 a.animated-button.thar-three {
 	color: black;
 	cursor: pointer;
 	display: block;
 	position: relative;
-	border: 2px solid #fc0c64;
+	border: 2px solid black;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
+	float:right;
+	width: 150px;
 }
 a.animated-button.thar-three:hover {
 	color: white !important;
@@ -256,38 +223,52 @@ a.animated-button.thar-three:before {
 	z-index: -1;
 	content: '';
 	color: #000 !important;
-	background: #fc0c64;
+	background: black;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 0s;
 }
-.envelope {
-  position: inherit;
-  color: skyblue;
-  font-size: 16px;
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
 }
 
-.envelope input {
-  width: 90%;
-  height: 35px;
-  color: black;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  font-family: 'Cooper Hewitt Light';
-
-}
-
-.envelope input { text-indent: 32px;}
-.envelope .fa-building, .fa-user-circle, .fa-key, .fa-map-marked-alt, .fa-city, .fa-phone-square, .fa-envelope, .fa-key{ 
+/* style glyph */
+.inner-addon .glyphicon {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  box-sizing: border-box;
+  padding: 10px;
+  pointer-events: none;
 }
 
-.selects{
-	width: 200px;
-	height: 30px;
-	border-radius: 5px;
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.login{
+	color: black;
+	font-family: 'Cooper Hewitt-Semi Bold';
+}
+
+.login:hover{
+	text-decoration: none;
+	color: gray;
+}
+.fa-mars-stroke{
+	width: 20px;
+}
+#right{
+	width: 48%;
+	float: right;
+}
+#top{
+	width: 48%;
+	float: top;
+}
+.detail{
+	border-bottom: 1px solid orange;
 }
 </style>
 
